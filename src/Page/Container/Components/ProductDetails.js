@@ -9,7 +9,7 @@ const ProductDetails = () => {
     fetch(`https://jsonplaceholder.typicode.com/photos/${productId}`)
       .then(res => res.json())
       .then(data => setDetails(data));
-  }, [details]);
+  }, []);
 
   console.log(productId);
   return (
